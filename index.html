@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grit & Glow Artworks | Custom Portraits</title>
+    <meta name="description" content="Bold, custom airbrush & acrylic portraits of people and pets. Raw lines, strong contrast, unforgettable.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">GRIT<span>&</span>GLOW</div>
+            <div class="nav-links">
+                <a href="#portfolio">Portfolio</a>
+                <a href="#process">Process</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About</a>
+            </div>
+            <button class="cta-btn" onclick="openForm()">GET A QUOTE</button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bold. Raw.<br><span class="gold">Unforgettable.</span></h1>
+            <p>Custom airbrush & acrylic portraits of people and pets. Gritty linework, bold contrast, and colors that feel alive.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="openForm()">Commission Your Portrait</button>
+                <button class="btn-secondary" onclick="scrollTo('portfolio')">See the Work</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Featured Work</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+                <button class="filter-btn" onclick="filterGallery('faces')">Faces with Glow</button>
+                <button class="filter-btn" onclick="filterGallery('pets')">Pets</button>
+                <button class="filter-btn" onclick="filterGallery('couples')">Couples & Families</button>
+                <button class="filter-btn" onclick="filterGallery('conceptual')">Conceptual</button>
+            </div>
+            <div class="gallery">
+                <div class="gallery-item faces" data-category="faces">
+                    <div class="gallery-placeholder">Static Pulse</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Faces with Glow</p>
+                        <h3>Static Pulse</h3>
+                    </div>
+                </div>
+                <div class="gallery-item pets" data-category="pets">
+                    <div class="gallery-placeholder">Unspoken Bond</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Pets</p>
+                        <h3>Unspoken Bond</h3>
+                    </div>
+                </div>
+                <div class="gallery-item faces" data-category="faces">
+                    <div class="gallery-placeholder">The Sentinel</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Faces with Glow</p>
+                        <h3>The Sentinel</h3>
+                    </div>
+                </div>
+                <div class="gallery-item pets" data-category="pets">
+                    <div class="gallery-placeholder">Loyal</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Pets</p>
+                        <h3>Loyal</h3>
+                    </div>
+                </div>
+                <div class="gallery-item faces" data-category="faces">
+                    <div class="gallery-placeholder">In the Shadow</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Faces with Glow</p>
+                        <h3>In the Shadow</h3>
+                    </div>
+                </div>
+                <div class="gallery-item conceptual" data-category="conceptual">
+                    <div class="gallery-placeholder">The Quiet Hours</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Conceptual</p>
+                        <h3>The Quiet Hours</h3>
+                    </div>
+                </div>
+                <div class="gallery-item conceptual" data-category="conceptual">
+                    <div class="gallery-placeholder">Momentum</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Conceptual</p>
+                        <h3>Momentum</h3>
+                    </div>
+                </div>
+                <div class="gallery-item pets" data-category="pets">
+                    <div class="gallery-placeholder">Reflection</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Pets</p>
+                        <h3>Reflection</h3>
+                    </div>
+                </div>
+                <div class="gallery-item faces" data-category="faces">
+                    <div class="gallery-placeholder">Duality</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Faces with Glow</p>
+                        <h3>Duality</h3>
+                    </div>
+                </div>
+                <div class="gallery-item conceptual" data-category="conceptual">
+                    <div class="gallery-placeholder">Legacy</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Conceptual</p>
+                        <h3>Legacy</h3>
+                    </div>
+                </div>
+                <div class="gallery-item faces" data-category="faces">
+                    <div class="gallery-placeholder">Beacon</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Faces with Glow</p>
+                        <h3>Beacon</h3>
+                    </div>
+                </div>
+                <div class="gallery-item couples" data-category="couples">
+                    <div class="gallery-placeholder">Together</div>
+                    <div class="gallery-overlay">
+                        <p class="category">Couples & Families</p>
+                        <h3>Together</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2>The Process</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Submit Your Vision</h3>
+                    <p>Send reference photos + tell me what you want. Style, colors, mood—I'll nail it.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Sketch & Approval</h3>
+                    <p>You get a detailed sketch to approve (1 revision included). We make sure it's perfect.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Painting Begins</h3>
+                    <p>I paint in airbrush & acrylic on canvas. You get progress updates along the way.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Final Details & Ship</h3>
+                    <p>Sealed, framed if requested, and shipped to you ready to hang.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <p class="size">Canvas Size</p>
+                    <h3>16 × 20</h3>
+                    <p class="price">$300</p>
+                    <ul>
+                        <li>✓ Airbrush & acrylic on canvas</li>
+                        <li>✓ Custom design + sketch approval</li>
+                        <li>✓ Progress updates</li>
+                        <li>✓ 2–4 week turnaround</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <p class="size">Canvas Size</p>
+                    <h3>18 × 24</h3>
+                    <p class="price">$450</p>
+                    <ul>
+                        <li>✓ Airbrush & acrylic on canvas</li>
+                        <li>✓ Custom design + sketch approval</li>
+                        <li>✓ Progress updates</li>
+                        <li>✓ 2–4 week turnaround</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <p class="size">Canvas Size</p>
+                    <h3>24 × 36</h3>
+                    <p class="price">$600</p>
+                    <ul>
+                        <li>✓ Airbrush & acrylic on canvas</li>
+                        <li>✓ Custom design + sketch approval</li>
+                        <li>✓ Progress updates</li>
+                        <li>✓ 2–4 week turnaround</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="pricing-note">50% deposit to start. Shipping quoted separately. All prices negotiable for unique requests.</p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>I paint portraits that feel real—not overly polished, but full of presence. Each piece is built with bold contrast, clean silhouettes, and color that hits like a memory. My work sits at the intersection of grit and glow: raw honesty with vibrant energy.</p>
+            <p>If you want a portrait that captures who someone really is—with edge, with soul—you're in the right place.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <div class="container">
+            <h2>Let's Create</h2>
+            <p>Ready for your custom portrait? Reach out.</p>
+            <a href="mailto:hello@gritandglowartworks.com" class="email">hello@gritandglowartworks.com</a>
+            <p class="phone">(402) 123-4567</p>
+            <button class="btn-primary" onclick="openForm()">Get Your Quote</button>
+        </div>
+    </section>
+
+    <!-- Modal Form -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeForm()">&times;</button>
+            <h3>Get Your Quote</h3>
+            <form id="quoteForm" onsubmit="submitForm(event)">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="your@email.com" required>
+                <textarea name="message" rows="6" placeholder="Tell me about your portrait. Who/what do you want painted? Any specific style, colors, or vibes?" required></textarea>
+                <button type="submit" class="btn-primary">Send Quote Request</button>
+                <p id="formMessage" style="margin-top: 10px; text-align: center; font-size: 14px;"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
